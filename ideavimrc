@@ -1,0 +1,56 @@
+""" Plugins to install:
+"""   - IdeaVim
+"""   - .ignore
+"""   - GitHub Copilot
+""" For Python:
+"""   - Requirements
+
+""" Manual settings to change:
+"""   - Max tabs open
+"""   - Disable custom line break removal reformat
+"""   - Enable formatter control comments
+
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set commentary
+set argtextobj
+set textobj-entire
+" set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set scrolloff=5
+set incsearch
+set hlsearch
+set ignorecase smartcase
+set nu
+set visualbell
+set noerrorbells
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings (see :actionlist) --------------
+map <leader>dd :action GotoDeclaration<CR>
+map <leader>dg :action FindUsages<CR>
+map <leader>dr :action RenameElement<CR>
+map gq         :action ReformatCode<CR>
+map <leader>r  :action Replace<CR>
+map <leader>R  :action ReplaceInPath<CR>
+map <C-q>      :action CloseEditor<CR>
+map <C-p>      :action SearchEverywhere<CR>
+map <C-a>      <Nop>
+map <C-x>      <Nop>
+
+" Clipboard
+vmap <C-c> "+ygv
+imap <C-v> <ESC>"+pa
+vmap <C-v> c<ESC>"+p

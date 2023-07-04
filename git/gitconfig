@@ -1,0 +1,41 @@
+# vim: ft=gitconfig
+
+[url "https://"]
+  insteadOf = git://
+[push]
+  default = simple
+[color]
+  ui = auto
+[core]
+  trustctime = false
+  filemode = false
+  askPass =
+  autocrlf = input
+[commit]
+  template = "~/.dotfiles/git/commit_template"
+  status = false
+[alias]
+  cl   = clone --recurse-submodules
+  co   = checkout
+  cob  = checkout -b
+  a    = add
+  aa   = add --all
+  b    = branch
+  c    = commit
+  cm   = commit -m
+  ca   = commit --amend
+  cam  = commit --amend -m
+  l    = log --pretty=oneline -n 20 --abbrev-commit
+  lg   = log --pretty=oneline -n 20 --abbrev-commit --graph
+  s    = status -sb
+  sm   = stash push -m
+  sl   = stash list
+  fa   = fetch --all
+  po   = push origin
+  pfo  = push --force origin
+  plo  = pull --ff-only origin
+  d    = diff
+  dc   = diff --cached
+  mt   = mergetool
+[include]
+  path = "~/.gitconfig.local"

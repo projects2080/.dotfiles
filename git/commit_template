@@ -1,0 +1,9 @@
+
+# See https://www.conventionalcommits.org
+# type(scope)!: desc [50 char width, lower case, present tense]
+#
+# longer desc [72 char width, present tense]
+# types: build, ci, docs, feat, fix, perf, refactor, style, test
+#
+# BREAKING CHANGE: if not ! above
+# a-footer: value

@@ -1,0 +1,231 @@
+{
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "onWindowChange",
+  "files.autoSaveDelay": 2000,
+  "editor.renderWhitespace": "trailing",
+  "editor.fontFamily": "Fira Code, Hack, monospace",
+  "editor.fontLigatures": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    ".vscode": true,
+    "**/__pycache__": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/.mypy_cache": true
+  },
+  "files.watcherExclude": {
+    "**/__pycache__": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/venv": true,
+    "**/.venv": true,
+    "**/.mypy_cache": true
+  },
+  "vim.hlsearch": true,
+  "vim.gdefault": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    { "before": ["<c-r>"], "commands": ["redo"] },
+    { "before": ["<c-s>"], "commands": ["workbench.action.files.save"] },
+    { "before": ["<c-a>"], "commands": [] },
+    { "before": ["<c-x>"], "commands": [] },
+    { "before": ["<c-q>"], "commands": ["workbench.action.closeActiveEditor"] },
+    { "before": ["<cr>"], "commands": ["workbench.action.keepEditor"] },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    { "before": ["-"], "commands": ["workbench.view.explorer"] },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["workbench.action.quickOpenView"]
+    },
+    {
+      "before": ["u"],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<space>", "<space>"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    { "before": ["<c-space>"], "commands": ["workbench.action.gotoSymbol"] },
+    { "before": ["<leader>", "f"], "commands": ["workbench.view.search"] },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["search.action.focusPreviousSearchResult"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["search.action.focusNextSearchResult"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.navigateForward"]
+    },
+    { "before": ["g", "q"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["<leader>", "d", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["<leader>", "d", "g"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    { "before": ["<leader>", "d", "r"], "commands": ["editor.action.rename"] },
+    {
+      "before": ["<leader>", "d", "q"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["K"], "commands": ["editor.action.showHover"] },
+    { "before": ["<tab>"], "commands": ["workbench.action.focusNextGroup"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["g", "q"], "commands": ["editor.action.formatSelection "] },
+    { "before": ["<leader>", "f"], "commands": ["workbench.view.search"] },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["workbench.action.replaceInFiles"]
+    }
+  ],
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "search.exclude": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.dragAndDrop": false,
+  "editor.mouseWheelScrollSensitivity": 3,
+  "editor.rulers": [120],
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLinesStyle": "all",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on"
+  },
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.localityBonus": true,
+  "editor.wordBasedSuggestionsMode": "currentDocument",
+  "workbench.enableExperiments": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "window.autoDetectColorScheme": true,
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "visible",
+  "window.newWindowDimensions": "inherit",
+  "explorer.openEditors.visible": 0,
+  "search.maxResults": 1000,
+  "search.searchOnTypeDebouncePeriod": 800,
+  "search.smartCase": true,
+  "search.useGlobalIgnoreFiles": true,
+  "debug.openExplorerOnEnd": false,
+  "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+  "debug.terminal.clearBeforeReusing": true,
+  "debug.toolBarLocation": "docked",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "problems.showCurrentInStatus": true,
+  "update.mode": "manual",
+  "emmet.excludeLanguages": ["*"],
+  "emmet.showExpandedAbbreviation": "never",
+  "eslint.run": "onSave",
+  "git.allowForcePush": true,
+  "prettier.printWidth": 120,
+  "vim.textwidth": 120,
+  "vim.visualstar": true,
+  "outline.showArrays": false,
+  "outline.showBooleans": false,
+  "outline.showEnumMembers": false,
+  "outline.showEvents": false,
+  "outline.showFields": false,
+  "outline.showKeys": false,
+  "outline.showNull": false,
+  "outline.showNumbers": false,
+  "outline.showProperties": false,
+  "outline.showStrings": false,
+  "outline.showVariables": false,
+  "aws.telemetry": false,
+  "git.confirmSync": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 16,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "telemetry.telemetryLevel": "off",
+  "window.commandCenter": true,
+  "window.customMenuBarAltFocus": false,
+  "window.dialogStyle": "custom",
+  "workbench.editor.navigationScope": "editorGroup",
+  "workbench.editor.wrapTabs": true,
+  "explorer.confirmUndo": "verbose",
+  "outline.showConstructors": false,
+  "outline.showConstants": false,
+  "outline.showOperators": false,
+  "outline.showTypeParameters": false,
+  "outline.showStructs": false,
+  "outline.showPackages": false,
+  "outline.showObjects": false,
+  "outline.showFiles": false,
+  "search.defaultViewMode": "tree",
+  "search.sortOrder": "type",
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.confirmOnExit": "hasChildProcesses",
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.enablePersistentSessions": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.foldingImportsByDefault": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "recentlyUsed",
+  "material-icon-theme.activeIconPack": "none",
+  "prettier.bracketSameLine": true,
+  "prettier.endOfLine": "auto",
+  "python.experiments.enabled": false,
+  "python.formatting.blackArgs": ["--line-length=120", "--target-version=py38"],
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--max-line-length=120",
+    "--disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,broad-except,invalid-name,import-outside-toplevel,fixme,too-many-locals,too-many-branches,too-many-statements",
+    "--good-names=i,j,e,x,y,df"
+  ],
+  "python.formatting.autopep8Args": ["--max-line-length=120"],
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.scrollback": 20000
+}
